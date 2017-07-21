@@ -1,18 +1,25 @@
 <header>
-  <center>
-    <h1>Well of Urd</h1>
-  </center>>
+  <div class="centerHead">
+    <center>
+      <h1>Well of Urd</h1>
+      </center>
+    </div>
 </header>
 
-<nav> INSERT NAV LINKS HERE
+<nav>
+  <div class = "tab">
+   <button class ="tablinks">Home</button>
+
+   <button class = "tablinks">News</button>
+
+   <button class = "tablinks">Guild Events</button>
+  </div>
 </nav>
 
-
-<section>
-  <h1>About Us</h1>
-  <p>We are a small guild focused on ruling the world.</p>
-
-</section>
+<div class = "about">
+    <h2>About Us</h2>
+    <p>This is a page about us</p>
+</div>
 
 <div class="right">
   <%=form_for @user, url: signup_path do |f| %>
@@ -23,6 +30,3 @@
 
 
 </div>
-
-
-<button>test</button>

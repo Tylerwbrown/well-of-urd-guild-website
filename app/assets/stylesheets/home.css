@@ -1,3 +1,90 @@
 .right {
     float: right;
 }
+
+div.centerHead{
+  float:center;
+
+  background-color: green;
+  width: 30%;
+  /*margin:auto;*/
+  margin:  10px auto;
+  border: 5px solid #ccc;
+}
+
+/* Style the tab */
+div.tab {
+  overflow: hidden;
+  border: 5px solid #ccc;
+  background-color: green;
+  /*background-color: #f1f1f1;*/
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color:#ffffff;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+div.about{
+  border: 5px solid #ccc;
+  background-color: green;
+  width: 50%;
+  padding: 0px 10px;
+  align:center;
+  float:left;
+  margin:10px 0px;
+}
+
+h1{
+  color:#ffffff;
+  font-size:250%;
+  /*text-shadow:
+  -2px -2px 0 green,
+  2px -2px 0 green,
+  -2px 2px 0 green,
+  2px 2px 0 green;*/
+
+    /*text-shadow:
+    2px 2px 0 green,
+   -1px -1px 0 green,
+    1px -1px 0 green,
+    -1px 1px 0 green,
+     1px 1px 0 green;
+
+ -webkit-text-fill-color: white;
+ -webkit-text-stroke-width: 1px;
+ -webkit-text-stroke-color: green;*/
+}
+
+h2{
+ color:#ffffff;
+}
+
+p{
+ color:#ffffff;
+}
