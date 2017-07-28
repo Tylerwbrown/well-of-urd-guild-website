@@ -1,8 +1,10 @@
 <center>
   <div class="alert alert-green">Welcome, <%= @user.email %>!</div>
-<div class="centerHead">
+<div class="homepage__header">
   <center>
     <h1>Well of Urd</h1>
-    <%= @user.email %>
+    <% unless @user.email.nil?  %>
+      <h2> <%= @user.email %> </h2>
+    <% end %>
   </center>
 </div>
