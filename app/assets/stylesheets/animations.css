@@ -1,6 +1,7 @@
 .alert {
   padding: 0;
   display: inline-block;
+  color: #000;
 
   visibility: hidden;
   overflow: hidden;
