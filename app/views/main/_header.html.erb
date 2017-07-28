@@ -1,10 +1,8 @@
 <center>
-  <div class="alert alert-green">Welcome, <%= @user.email %>!</div>
-<div class="homepage__header">
-  <center>
+  <div class="alert alert--green">
+    <h1>Welcome<%= @user.email ? ", #{@user.email}" : '' %>!</h1>
+  </div>
+  <div class="homepage__header green-block">
     <h1>Well of Urd</h1>
-    <% unless @user.email.nil?  %>
-      <h2> <%= @user.email %> </h2>
-    <% end %>
-  </center>
-</div>
+  </div>
+</center>
