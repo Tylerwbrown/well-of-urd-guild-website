@@ -1,7 +1,7 @@
 class MainController < ApplicationController
-
   def home
-    @user = User.new
+    id = session[:current_user_id]
+    @user = User.find_by_id(id) if id.present?
+    @user ||= User.new
   end
-
 end

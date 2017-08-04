@@ -1,0 +1,6 @@
+<%= form_for @user, url: signup_path, html: { class: 'login-form' } do |f| %>
+  <%= f.text_field :email, placeholder: "Email Address" %>
+  <%= f.text_field :password, placeholder: "Password" %>
+  <br />
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,48 @@
+.alert {
+  animation-name: alert;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-timing-function: linear;
+
+  padding: 10px 80px;
+  height: 80px;
+  visibility: visible;
+  display: inline-block;
+  overflow: hidden;
+  color: #000;
+}
+
+.alert--green { background-color: #dff0d8; }
+.alert--red { background-color: #f2dede; }
+
+@keyframes alert {
+  to {
+    padding: 0;
+    height: 0px;
+    visibility: hidden;
+  }
+}
+
+.homepage__header {
+  animation-name: homepage__header;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  animation-timing-function: linear;
+
+  h1 { font-size: 250%; }
+  height: 0px;
+  width: 460.75px;
+  margin: 10px 0px;
+  visibility: hidden;
+}
+
+@keyframes homepage__header {
+  0% { visibility: visible; }
+  to {
+    padding: 0px 80px;
+    height: 100px;
+    visibility: visible;
+  }
+}

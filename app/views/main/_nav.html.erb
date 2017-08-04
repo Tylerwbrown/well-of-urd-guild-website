@@ -1,0 +1,10 @@
+<div class="tabs green-block">
+  <button>Home</button>
+  <button>News</button>
+  <button>Guild Events</button>
+
+  <div class="login-area">
+    <%= content_tag(:h2) { @user.email } if @user.email.present? %>
+    <%= render partial: 'shared/login_form' unless session[:current_user_id] %>
+  </div>
+</div>
